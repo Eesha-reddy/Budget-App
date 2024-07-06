@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Budget Tracker</h1>
+    <form id="incomeForm">
+      <label for="income">Income:</label>
+      <input type="text" id="incomeType" name="incomeType" placeholder="Income Type" required>
+      <input type="number" id="income" name="income" required>
+      
+      <button type="submit" id="submit">Add Income</button>
+    </form>
+    <form id="expenseForm">
+      <label for="expense">Expense:</label>
+      <input type="text" id="expenseType" name="expenseType" placeholder="Expense Type" required>
+      <input type="number" id="expense" name="expense" required>
+      
+      <button type="submit" id="submit">Add Expense</button>
+    </form>
+    <div id="summary">
+      <h2>Summary</h2>
+      <p>Total Income: <span id="totalIncome">0.00</span></p>
+      <p>Total Expenses: <span id="totalExpenses">0.00</span></p>
+      <p>Amount Left: <span id="amountLeft">0.00</span></p>
+    </div>
+    <div id="details">
+      <h2>Details</h2>
+      <table id="detailsTable">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be added dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  
+ 
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F1EAFF;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #49243E;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #704264;
+}
+
+#submit{
+  background-color: #BB8493;
+}
+
+
+form input[type="number"],
+form input[type="text"],
+form button {
+  padding: 8px;
+  margin-right: 10px;
+  
+}
+
+
+form button {
+  cursor: pointer;
+}
+
+#summary {
+  margin-top: 20px;
+}
+
+h2{
+  color: #704264;
+}
+
+#summary h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+#summary p {
+  margin-bottom: 8px;
+}
+
+#details {
+  margin-top: 30px;
+}
+
+#details h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+#detailsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#detailsTable th, #detailsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#detailsTable th {
+  background-color: #f2f2f2;
+}
+
+#detailsTable td:last-child {
+  text-align: center;
+}
+
+button {
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.income-row {
+  background-color: #DEF9C4; /* Light green for income rows */
+}
+
+.expense-row {
+  background-color: #ffcccc; /* Light red for expense rows */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  form input[type="number"],
+  form input[type="text"],
+  form button {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  button {
+      width: 100%;
+  }
+
+  #detailsTable th, #detailsTable td {
+      padding: 6px;
+  }
+}
+
+
+#detailsTable button{
+  background-color: #e74c3c;
+}
